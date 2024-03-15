@@ -16,7 +16,7 @@ const Recipe = ({ recipe }) => {
                 <div className="card-body">
                     <h2 className="card-title">{recipe_name}</h2>
                     <p>{short_description}</p>
-                    <hr />
+                    
                     <div>
                         {
                             ingredients.map((ingredient,idx) => <li key={idx}>{ingredient}</li> )

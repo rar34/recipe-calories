@@ -1,9 +1,9 @@
-import Background from '../../assets/images/banner.png'
+
 
 const Banner = () => {
     return (
         <div className='max-w-[1320px] mx-auto text-white'>
-            <div className="min-h-[600px]" style={{background: `url(${Background})`, backgroundRepeat: 'no-repeat'}}>
+            <div className="min-h-[600px]" style={{background: `url('https://i.ibb.co/W6vzjxC/banner.png')`, backgroundRepeat: 'no-repeat'}}>
                 <div className="hero-content text-center text-neutral-content md:py-20">
                     <div className="max-w-4xl">
                         <h1 className="mb-5 leading-normal text-xl lg:text-5xl font-bold">Discover an exceptional cooking class tailored for you!</h1>
