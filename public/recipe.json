@@ -12,7 +12,7 @@
       "recipe_id": 2,
       "recipe_name": "Vegetable Fried Rice",
       "short_description": "A classic fried rice dish packed with colorful vegetables.",
-      "ingredients": ["300 g cooked rice", "100 g carrots", "100 g peas"],
+      "ingredients": ["300 g cooked rice", "100 g carrots", "100 g peas", "2 eggs", "30 ml soy sauce"],
       "preparing_time": 25,
       "calories": 280,
       "recipe_image": "https://i.ibb.co/42yRwCC/Rectangle-20170-1.png"
@@ -21,7 +21,7 @@
       "recipe_id": 3,
       "recipe_name": "Creamy Mushroom Pasta",
       "short_description": "A creamy pasta dish with flavorful mushrooms and a hint of garlic.",
-      "ingredients": ["300 g pasta", "200 g mushrooms", "100 ml heavy cream"],
+      "ingredients": ["300 g pasta", "200 g mushrooms", "100 ml heavy cream", "2 cloves garlic", "50 g parmesan cheese"],
       "preparing_time": 35,
       "calories": 380,
       "recipe_image": "https://i.ibb.co/tMS6wwr/Rectangle-20170.png"
@@ -30,7 +30,7 @@
       "recipe_id": 4,
       "recipe_name": "Grilled Salmon with Lemon Herb Sauce",
       "short_description": "Juicy grilled salmon fillets served with a tangy lemon herb sauce.",
-      "ingredients": ["4 salmon fillets", "1 lemon", "2 tbsp olive oil"],
+      "ingredients": ["4 salmon fillets", "1 lemon", "2 tbsp olive oil", "2 cloves garlic", "2 tbsp chopped herbs (e.g., parsley, dill)"],
       "preparing_time": 20,
       "calories": 350,
       "recipe_image": "https://i.ibb.co/tMS6wwr/Rectangle-20170.png"
@@ -39,7 +39,7 @@
       "recipe_id": 5,
       "recipe_name": "Caprese Salad",
       "short_description": "A refreshing salad with ripe tomatoes, fresh mozzarella, and basil leaves.",
-      "ingredients": ["2 large tomatoes", "200 g fresh mozzarella", "50 g fresh basil leaves"],
+      "ingredients": ["2 large tomatoes", "200 g fresh mozzarella", "50 g fresh basil leaves", "2 tbsp balsamic vinegar", "2 tbsp olive oil"],
       "preparing_time": 15,
       "calories": 200,
       "recipe_image": "https://i.ibb.co/tMS6wwr/Rectangle-20170.png"
@@ -48,7 +48,7 @@
       "recipe_id": 6,
       "recipe_name": "Chocolate Chip Cookies",
       "short_description": "Classic chocolate chip cookies that are soft and chewy on the inside.",
-      "ingredients": ["200 g all-purpose flour", "150 g butter", "100 g brown sugar"],
+      "ingredients": ["200 g all-purpose flour", "150 g butter", "100 g brown sugar", "100 g white sugar", "1 tsp vanilla extract", "100 g chocolate chips"],
       "preparing_time": 40,
       "calories": 150,
       "recipe_image": "https://i.ibb.co/tMS6wwr/Rectangle-20170.png"
