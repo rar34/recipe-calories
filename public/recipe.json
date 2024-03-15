@@ -6,7 +6,7 @@
       "ingredients": ["550 g ground beef", "1 onion chopped", "2 cloves garlic, minced"],
       "preparing_time": "30 min",
       "calories": 320,
-      "recipe_image": "spicy_basil_chicken.jpg"
+      "recipe_image": "https://i.ibb.co/tMS6wwr/Rectangle-20170.png"
     },
     {
       "recipe_id": 2,
@@ -15,7 +15,7 @@
       "ingredients": ["300 g cooked rice", "100 g carrots", "100 g peas", "2 eggs", "30 ml soy sauce"],
       "preparing_time": "25 min",
       "calories": 280,
-      "recipe_image": "vegetable_fried_rice.jpg"
+      "recipe_image": "https://i.ibb.co/42yRwCC/Rectangle-20170-1.png"
     },
     {
       "recipe_id": 3,
@@ -24,7 +24,7 @@
       "ingredients": ["300 g pasta", "200 g mushrooms", "100 ml heavy cream", "2 cloves garlic", "50 g parmesan cheese"],
       "preparing_time": "35 min",
       "calories": 380,
-      "recipe_image": "creamy_mushroom_pasta.jpg"
+      "recipe_image": "https://i.ibb.co/tMS6wwr/Rectangle-20170.png"
     },
     {
       "recipe_id": 4,
@@ -33,7 +33,7 @@
       "ingredients": ["4 salmon fillets", "1 lemon", "2 tbsp olive oil", "2 cloves garlic", "2 tbsp chopped herbs (e.g., parsley, dill)"],
       "preparing_time": "20 min",
       "calories": 350,
-      "recipe_image": "grilled_salmon.jpg"
+      "recipe_image": "https://i.ibb.co/tMS6wwr/Rectangle-20170.png"
     },
     {
       "recipe_id": 5,
@@ -42,7 +42,7 @@
       "ingredients": ["2 large tomatoes", "200 g fresh mozzarella", "50 g fresh basil leaves", "2 tbsp balsamic vinegar", "2 tbsp olive oil"],
       "preparing_time": "15 min",
       "calories": 200,
-      "recipe_image": "caprese_salad.jpg"
+      "recipe_image": "https://i.ibb.co/tMS6wwr/Rectangle-20170.png"
     },
     {
       "recipe_id": 6,
@@ -51,6 +51,6 @@
       "ingredients": ["200 g all-purpose flour", "150 g butter", "100 g brown sugar", "100 g white sugar", "1 tsp vanilla extract", "100 g chocolate chips"],
       "preparing_time": "40 min",
       "calories": 150,
-      "recipe_image": "chocolate_chip_cookies.jpg"
+      "recipe_image": "https://i.ibb.co/tMS6wwr/Rectangle-20170.png"
     }
   ]
