@@ -3,10 +3,24 @@ import WantToCook from '../WantToCook/WantToCook';
 import CurrentlyCooking from '../CurrentlyCooking/CurrentlyCooking';
 
 const Cook = ({ wantToCook, handleCurrentlyCooking, cook, totalTime, totalCalories }) => {
-    console.log(cook);
+    // console.log(cook);
     return (
         <div className='lg:w-1/3'>
             <h2 className="text-center text-2xl font-semibold">Want To Cook: {wantToCook.length}</h2>
+            <div className="overflow-x-auto">
+                <table className="table">
+                    <thead>
+                        <tr className='flex justify-between'>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Time</th>
+                            <th>Calories</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                </table>
+            </div>
             <hr />
 
             {
@@ -15,9 +29,8 @@ const Cook = ({ wantToCook, handleCurrentlyCooking, cook, totalTime, totalCalori
             <h2 className="text-center">Currently Cooking: {cook.length} </h2>
             <div className="overflow-x-auto">
                 <table className="table">
-
                     <thead>
-                        <tr>
+                        <tr className='flex justify-between'>
                             <th></th>
                             <th>Name</th>
                             <th>Time</th>

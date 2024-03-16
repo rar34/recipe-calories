@@ -7,21 +7,12 @@ const CurrentlyCooking = ({ cook }) => {
         <div>
             <div className="overflow-x-auto">
                 <table className="table">
-
-                    {/* <thead>
-                        <tr>
-                            <th></th>
-                            <th>Name</th>
-                            <th>Time</th>
-                            <th>Calories</th>
-                        </tr>
-                    </thead> */}
                     <tbody>
                         <tr>
-                            <th>1</th>
-                            <td>{recipe_name}</td>
-                            <td>{preparing_time}</td>
-                            <td>{calories}</td>
+                            <td></td>
+                            <td className='w-1/2'>{recipe_name}</td>
+                            <td className='w-1/4'>{preparing_time}</td>
+                            <td className='w-1/4'>{calories}</td>
                         </tr>
                     </tbody>
                 </table>

@@ -12,12 +12,13 @@ const Recipe = ({ recipe, handleWantToCookBtn }) => {
     return (
         <div>
             <div className="card bg-base-100 shadow-lg">
-                <figure><img src={recipe_image} alt="" /></figure>
+                <figure><img className='w-full rounded-2xl' src={recipe_image} alt="" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{recipe_name}</h2>
                     <p>{short_description}</p>
                     
                     <div>
+                        <h3>Ingredients: {ingredients.length}</h3>
                         {
                             ingredients.map((ingredient,idx) => <li key={idx}>{ingredient}</li> )
                         }
