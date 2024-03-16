@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 
 const WantToCook = ({cook}) => {
     // console.log(wantToCook)
-    const {recipe_id, recipe_name, preparing_time, calories} = cook;
+    const {recipe_name, preparing_time, calories} = cook;
     return (
         <div className="">
             <div className="">
