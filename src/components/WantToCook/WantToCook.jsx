@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 const WantToCook = ({ cook, handleCurrentlyCooking }) => {
     // console.log(wantToCook)
     const { recipe_name, preparing_time, calories } = cook;
-    
+
     return (
         <div>
             <div>
@@ -11,7 +11,7 @@ const WantToCook = ({ cook, handleCurrentlyCooking }) => {
                     <table className="table">
                         <tbody>
                             <tr className='flex justify-between'>
-                                <td></td>
+                                <td>{}</td>
                                 <td>{recipe_name}</td>
                                 <td>{preparing_time} min</td>
                                 <td>{calories}</td>

@@ -38,7 +38,6 @@ function App() {
 
   const handleCurrentlyCooking = (card) => {
     const currentlyCook = [...cook, card];
-    
     setCook(currentlyCook);
     setTotalTime(totalTime + card.preparing_time);
     setTotalCalories(totalCalories + card.calories);
