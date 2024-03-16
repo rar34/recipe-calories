@@ -7,7 +7,7 @@ import Banner from './components/Banner/Banner'
 import Navbar from './components/Navbar/Navbar'
 import Recipes from './components/Recipes/Recipes'
 import Cook from './components/Cook/Cook'
-import CurrentlyCookingBtn from './components/CurrentlyCookingBtn/CurrentlyCookingBtn';
+
 
 
 
@@ -15,6 +15,8 @@ function App() {
 
   const [wantToCook, setWantToCook] = useState([]);
   const [cook, setCook] = useState([]);
+  const [totalTime, setTotalTime] = useState(0);
+  const [totalCalories, setTotalCalories] = useState(0);
 
   const notify = () => toast("Already exist");
 
@@ -34,6 +36,8 @@ function App() {
   const handleCurrentlyCooking = (card) =>{
     const currentlyCook = [...cook, card];
     setCook(currentlyCook);
+    setTotalTime(totalTime + card.preparing_time);
+    setTotalCalories(totalCalories + card.calories);
   }
   // console.log(cook);
 
@@ -47,9 +51,8 @@ function App() {
       </div>
       <div className='flex flex-col md:flex-row gap-6 max-w-[1320px] mx-auto'>
         <Recipes handleWantToCookBtn={handleWantToCookBtn}></Recipes>
-        <Cook wantToCook={wantToCook} handleCurrentlyCooking={handleCurrentlyCooking} cook={cook}></Cook>
+        <Cook wantToCook={wantToCook} handleCurrentlyCooking={handleCurrentlyCooking} cook={cook} totalTime={totalTime} totalCalories={totalCalories}></Cook>
       </div>
-      <CurrentlyCookingBtn></CurrentlyCookingBtn>
       <ToastContainer></ToastContainer>
     </>
   )

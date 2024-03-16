@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types'
 import WantToCook from '../WantToCook/WantToCook';
+import CurrentlyCooking from '../CurrentlyCooking/CurrentlyCooking';
 
-const Cook = ({ wantToCook, handleCurrentlyCooking, cook }) => {
+const Cook = ({ wantToCook, handleCurrentlyCooking, cook, totalTime, totalCalories }) => {
     console.log(cook);
     return (
         <div className='lg:w-1/3'>
@@ -11,10 +12,29 @@ const Cook = ({ wantToCook, handleCurrentlyCooking, cook }) => {
             {
                 wantToCook.map((cook, idx) => <WantToCook key={idx} cook={cook} handleCurrentlyCooking={handleCurrentlyCooking}></WantToCook>)
             }
-            <h2 className="text-center">Currently Cooking: </h2>
+            <h2 className="text-center">Currently Cooking: {cook.length} </h2>
+            <div className="overflow-x-auto">
+                <table className="table">
+
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Time</th>
+                            <th>Calories</th>
+                        </tr>
+                    </thead>
+
+                </table>
+            </div>
             {
-                
+                cook.map((c, idx) => <CurrentlyCooking key={idx} cook={c}></CurrentlyCooking>)
             }
+            <hr />
+            <div className='flex justify-between'>
+                <p className='font-bold'>Total Time: {totalTime} minutes</p>
+                <p className='font-bold'>Total Calories: {totalCalories} calories</p>
+            </div>
         </div>
     );
 };
@@ -22,6 +42,8 @@ const Cook = ({ wantToCook, handleCurrentlyCooking, cook }) => {
 Cook.propTypes = {
     wantToCook: PropTypes.array,
     handleCurrentlyCooking: PropTypes.func,
-    cook: PropTypes.object
+    cook: PropTypes.object,
+    totalTime: PropTypes.number,
+    totalCalories: PropTypes.number
 }
 export default Cook;
