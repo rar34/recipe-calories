@@ -38,6 +38,9 @@ function App() {
     setCook(currentlyCook);
     setTotalTime(totalTime + card.preparing_time);
     setTotalCalories(totalCalories + card.calories);
+
+    const remainingCook = wantToCook.filter(c => c.recipe_id !== card.recipe_id);
+    setWantToCook(remainingCook); 
   }
   // console.log(cook);
 
