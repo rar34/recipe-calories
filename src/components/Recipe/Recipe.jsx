@@ -10,8 +10,8 @@ const Recipe = ({ recipe, handleWantToCookBtn }) => {
     const { recipe_name, recipe_image, short_description, ingredients, preparing_time, calories } = recipe;
     // console.log(ingredients);
     return (
-        <div>
-            <div className="card bg-base-100 shadow-lg">
+        <div className='cards'>
+            <div className="bg-base-100">
                 <figure><img className='w-full rounded-2xl' src={recipe_image} alt="" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{recipe_name}</h2>

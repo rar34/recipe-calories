@@ -8,7 +8,7 @@ const CurrentlyCooking = ({ cook }) => {
             <div className="overflow-x-auto">
                 <table className="table">
                     <tbody>
-                        <tr>
+                        <tr className='flex justify-between'>
                             <td></td>
                             <td className='w-1/2'>{recipe_name}</td>
                             <td className='w-1/4'>{preparing_time}</td>

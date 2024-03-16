@@ -5,7 +5,7 @@ import CurrentlyCooking from '../CurrentlyCooking/CurrentlyCooking';
 const Cook = ({ wantToCook, handleCurrentlyCooking, cook, totalTime, totalCalories }) => {
     // console.log(cook);
     return (
-        <div className='lg:w-1/3'>
+        <div className='lg:w-1/3 cards my-6 px-3'>
             <h2 className="text-center text-2xl font-semibold">Want To Cook: {wantToCook.length}</h2>
             <div className="overflow-x-auto">
                 <table className="table">
