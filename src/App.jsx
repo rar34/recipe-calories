@@ -1,14 +1,27 @@
 
+import { useState } from 'react'
 import './App.css'
 import Banner from './components/Banner/Banner'
 import Navbar from './components/Navbar/Navbar'
 import Recipes from './components/Recipes/Recipes'
-import WantToCook from './components/WantToCook/WantToCook'
+
+import Cook from './components/Cook/Cook'
 
 function App() {
+
+  const [wantToCook, setWantToCook] = useState([]);
+
   const handleWantToCookBtn = (card) => {
-    console.log(card);
+    const newCook = [...wantToCook, card];
+    const isExist = wantToCook.find(item => item.recipe_id === card.recipe_id);
+    if(!isExist){
+      setWantToCook(newCook)
+    }
+    else{
+      return alert('Item is exist')
+    }
   }
+  // console.log(wantToCook)
 
   return (
     <>
@@ -20,7 +33,8 @@ function App() {
       </div>
       <div className='flex flex-col md:flex-row gap-6 max-w-[1320px] mx-auto'>
         <Recipes handleWantToCookBtn={handleWantToCookBtn}></Recipes>
-        <WantToCook></WantToCook>
+        {/* <WantToCook wantToCook={wantToCook}></WantToCook> */}
+        <Cook wantToCook={wantToCook}></Cook>
       </div>
     </>
   )

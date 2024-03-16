@@ -1,12 +1,13 @@
+import PropTypes from 'prop-types'
 
-
-const WantToCook = () => {
+const WantToCook = ({cook}) => {
+    // console.log(wantToCook)
+    const {recipe_id, recipe_name, preparing_time, calories} = cook;
     return (
-        <div className="lg:w-1/3">
+        <div className="">
             <div className="">
                 <div>
-                    <h2 className="text-center text-2xl font-semibold">Want To Cook: </h2>
-                    <hr />
+                    
                     <div>
                         <div className="overflow-x-auto">
                             <table className="table">
@@ -22,10 +23,10 @@ const WantToCook = () => {
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th>1</th>
-                                        <td>Cy Ganderton</td>
-                                        <td>Quality Control Specialist</td>
-                                        <td>Blue</td>
+                                        <th></th>
+                                        <td>{recipe_name}</td>
+                                        <td>{preparing_time} min</td>
+                                        <td>{calories}</td>
                                         <button className="btn rounded-[50px] border-0 bg-green-400">Preparing</button>
                                     </tr>
                                 </tbody>
@@ -33,8 +34,8 @@ const WantToCook = () => {
                         </div>
                     </div>
                     <div>
-                        <h2 className="text-center">Currently Cooking: </h2>
-                        <div className="overflow-x-auto">
+                        
+                        {/* <div className="overflow-x-auto">
                             <table className="table">
 
                                 <thead>
@@ -54,7 +55,7 @@ const WantToCook = () => {
                                     </tr>
                                 </tbody>
                             </table>
-                        </div>
+                        </div> */}
                     </div>
                     <hr />
                 </div>
@@ -63,4 +64,10 @@ const WantToCook = () => {
     );
 };
 
+
+WantToCook.propTypes = {
+    cook: PropTypes.object,
+    recipe_name: PropTypes.string,
+
+}
 export default WantToCook;
