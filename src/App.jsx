@@ -1,22 +1,20 @@
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
-
 import { useState } from 'react'
 import './App.css'
 import Banner from './components/Banner/Banner'
 import Navbar from './components/Navbar/Navbar'
 import Recipes from './components/Recipes/Recipes'
-
-
-
-
 import Cook from './components/Cook/Cook'
+import CurrentlyCookingBtn from './components/CurrentlyCookingBtn/CurrentlyCookingBtn';
+
+
 
 function App() {
 
   const [wantToCook, setWantToCook] = useState([]);
+  const [cook, setCook] = useState([]);
 
   const notify = () => toast("Already exist");
 
@@ -29,12 +27,15 @@ function App() {
       setWantToCook(newCook)
     }
     else {
-      // return alert('added already')
-      // return toast('already existed')
       return notify()
     }
   }
-  // console.log(wantToCook)
+  
+  const handleCurrentlyCooking = (card) =>{
+    const currentlyCook = [...cook, card];
+    setCook(currentlyCook);
+  }
+  // console.log(cook);
 
   return (
     <>
@@ -46,8 +47,9 @@ function App() {
       </div>
       <div className='flex flex-col md:flex-row gap-6 max-w-[1320px] mx-auto'>
         <Recipes handleWantToCookBtn={handleWantToCookBtn}></Recipes>
-        <Cook wantToCook={wantToCook}></Cook>
+        <Cook wantToCook={wantToCook} handleCurrentlyCooking={handleCurrentlyCooking} cook={cook}></Cook>
       </div>
+      <CurrentlyCookingBtn></CurrentlyCookingBtn>
       <ToastContainer></ToastContainer>
     </>
   )
