@@ -5,7 +5,7 @@ import { MdOutlineLocalFireDepartment } from "react-icons/md";
 
 
 
-const Recipe = ({ recipe }) => {
+const Recipe = ({ recipe, handleWantToCookBtn }) => {
     // console.log(recipe)
     const { recipe_name, recipe_image, short_description, ingredients, preparing_time, calories } = recipe;
     // console.log(ingredients);
@@ -29,7 +29,7 @@ const Recipe = ({ recipe }) => {
                         <span className='flex items-center gap-2'>{<MdOutlineLocalFireDepartment/>} {calories} Calories</span>
                     </div>
                     <div className="card-actions">
-                        <button className="btn bg-green-400 rounded-full border-0">Want to Cook</button>
+                        <button onClick={()=>handleWantToCookBtn(recipe)} className="btn bg-green-400 rounded-full border-0">Want to Cook</button>
                     </div>
                 </div>
             </div>
@@ -39,6 +39,7 @@ const Recipe = ({ recipe }) => {
 
 
 Recipe.propTypes = {
-    recipe: PropTypes.object
+    recipe: PropTypes.object,
+    handleWantToCookBtn: PropTypes.func
 }
 export default Recipe;

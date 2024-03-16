@@ -1,4 +1,3 @@
-import ProfilePic from '../../assets/images/profile.png'
 
 
 const Navbar = () => {
