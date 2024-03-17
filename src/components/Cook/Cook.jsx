@@ -3,7 +3,7 @@ import WantToCook from '../WantToCook/WantToCook';
 import CurrentlyCooking from '../CurrentlyCooking/CurrentlyCooking';
 
 const Cook = ({ wantToCook, handleCurrentlyCooking, cook, totalTime, totalCalories }) => {
-    // console.log(cook);
+    // console.log(wantToCook);
     return (
         <div className='lg:w-1/3 my-6 px-3'>
             <div className='cards p-3'>
@@ -25,7 +25,7 @@ const Cook = ({ wantToCook, handleCurrentlyCooking, cook, totalTime, totalCalori
                 <hr />
 
                 {
-                    wantToCook.map((cook, idx) => <WantToCook key={idx} cook={cook} handleCurrentlyCooking={handleCurrentlyCooking}></WantToCook>)
+                    wantToCook.map((cook, index) => <WantToCook key={index} index={index} cook={cook} handleCurrentlyCooking={handleCurrentlyCooking}></WantToCook>)
                 }
                 <h2 className="text-center">Currently Cooking: {cook.length} </h2>
                 <div className="overflow-x-auto">
@@ -42,7 +42,7 @@ const Cook = ({ wantToCook, handleCurrentlyCooking, cook, totalTime, totalCalori
                     </table>
                 </div>
                 {
-                    cook.map((c, idx) => <CurrentlyCooking key={idx} cook={c}></CurrentlyCooking>)
+                    cook.map((c, idx) => <CurrentlyCooking key={idx} index={idx} cook={c}></CurrentlyCooking>)
                 }
                 <hr />
                 <div className='flex justify-between'>

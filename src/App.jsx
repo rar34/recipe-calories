@@ -44,6 +44,7 @@ function App() {
 
 
     const remainingCook = wantToCook.filter(c => c.recipe_id !== card.recipe_id);
+    
     setWantToCook(remainingCook);
   }
   // console.log(count);

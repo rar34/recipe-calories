@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types'
 
-const WantToCook = ({ cook, handleCurrentlyCooking }) => {
-    // console.log(wantToCook)
+const WantToCook = ({ cook, handleCurrentlyCooking, index }) => {
+    // console.log(cook)
     const { recipe_name, preparing_time, calories } = cook;
+    
 
     return (
         <div>
@@ -11,7 +12,7 @@ const WantToCook = ({ cook, handleCurrentlyCooking }) => {
                     <table className="table">
                         <tbody>
                             <tr className='flex justify-between'>
-                                <td>{}</td>
+                                <td>{index+1}</td>
                                 <td>{recipe_name}</td>
                                 <td>{preparing_time} minutes</td>
                                 <td>{calories} calories</td>
@@ -30,7 +31,8 @@ const WantToCook = ({ cook, handleCurrentlyCooking }) => {
 WantToCook.propTypes = {
     cook: PropTypes.object,
     recipe_name: PropTypes.string,
-    handleCurrentlyCooking: PropTypes.func
+    handleCurrentlyCooking: PropTypes.func,
+    index: PropTypes.object
 
 }
 export default WantToCook;
