@@ -13,8 +13,8 @@ const WantToCook = ({ cook, handleCurrentlyCooking }) => {
                             <tr className='flex justify-between'>
                                 <td>{}</td>
                                 <td>{recipe_name}</td>
-                                <td>{preparing_time} min</td>
-                                <td>{calories}</td>
+                                <td>{preparing_time} minutes</td>
+                                <td>{calories} calories</td>
                                 <button onClick={() => handleCurrentlyCooking(cook)} className="btn rounded-[50px] border-0 bg-green-400">Preparing</button>
                             </tr>
                         </tbody>

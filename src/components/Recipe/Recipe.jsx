@@ -18,11 +18,12 @@ const Recipe = ({ recipe, handleWantToCookBtn }) => {
                     <p>{short_description}</p>
                     
                     <div>
+                        <hr />
                         <h3>Ingredients: {ingredients.length}</h3>
                         {
                             ingredients.map((ingredient,idx) => <li key={idx}>{ingredient}</li> )
                         }
-
+                        <hr />
                     </div>
                     <hr />
                     <div className='flex gap-6 mb-4'>

@@ -11,8 +11,8 @@ const CurrentlyCooking = ({ cook }) => {
                         <tr className='flex justify-between'>
                             <td></td>
                             <td className='w-1/2'>{recipe_name}</td>
-                            <td className='w-1/4'>{preparing_time}</td>
-                            <td className='w-1/4'>{calories}</td>
+                            <td className='w-1/4'>{preparing_time} minutes</td>
+                            <td className='w-1/4'>{calories} calories</td>
                         </tr>
                     </tbody>
                 </table>
