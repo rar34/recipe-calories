@@ -7,6 +7,7 @@ import Banner from './components/Banner/Banner'
 import Navbar from './components/Navbar/Navbar'
 import Recipes from './components/Recipes/Recipes'
 import Cook from './components/Cook/Cook'
+import Footer from './components/Footer/Footer';
 
 
 
@@ -61,6 +62,7 @@ function App() {
         <Recipes handleWantToCookBtn={handleWantToCookBtn}></Recipes>
         <Cook wantToCook={wantToCook} handleCurrentlyCooking={handleCurrentlyCooking} cook={cook} totalTime={totalTime} totalCalories={totalCalories}></Cook>
       </div>
+      <Footer></Footer>
       <ToastContainer></ToastContainer>
     </>
   )
